@@ -1,0 +1,11 @@
+{{#with this as |data|}}
+  const baseObject =
+  {{json baseObject}}; const stringValues =
+  {{json otherObject}}
+
+  const variablesObject =
+  {{{vars varsObject}}}
+
+  const result =
+  {{deepMerge (json baseObject) (json otherObject) (vars varsObject)}}
+{{/with}}
